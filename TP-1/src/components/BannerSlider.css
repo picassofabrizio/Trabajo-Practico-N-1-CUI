@@ -1,0 +1,63 @@
+
+.banner-slider {
+  position: relative;
+  width: 100%;
+  max-width: 75rem;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.banner-slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: rgb(17 17 17 / 70%);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.flecha:hover {
+  background-color: #8b5cf6;
+}
+
+.flecha.anterior {
+  left: 1rem;
+}
+
+.flecha.siguiente {
+  right: 1rem;
+}
+
+@media (max-width: 600px) {
+  .banner-slider {
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .flecha {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+
+  .flecha.anterior {
+    left: 0.5rem;
+  }
+
+  .flecha.siguiente {
+    right: 0.5rem;
+  }
+}
