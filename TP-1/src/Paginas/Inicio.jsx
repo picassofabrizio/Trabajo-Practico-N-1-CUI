@@ -8,8 +8,7 @@ function Inicio() {
         <p className="etiqueta">TU MUNDO GAMING</p>
 
         <h2>
-          Llevá tu setup
-          <span> al siguiente nivel.</span>
+          Llevá tu setup al siguiente nivel.
         </h2>
 
         <p className="descripcion">
