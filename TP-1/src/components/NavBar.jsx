@@ -6,6 +6,7 @@ function NavBar() {
       <NavLink to="/" className={({ isActive }) => isActive ? "activo" : ""}>Inicio</NavLink>
       <NavLink to="/contacto" className={({ isActive }) => isActive ? "activo" : ""}>Contacto</NavLink>
       <NavLink to="/nosotros" className={({ isActive }) => isActive ? "activo" : ""}>Nosotros</NavLink>
+      <NavLink to="/carrito" className={({ isActive }) => isActive ? "activo" : ""}>🛒</NavLink>
     </nav>
   )
 }
