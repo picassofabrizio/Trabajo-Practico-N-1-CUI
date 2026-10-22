@@ -1,0 +1,138 @@
+import teclado from "../assets/imagenes/productos/teclado.jpg";
+import mouse from "../assets/imagenes/productos/mouse.jpg";
+import auriculares from "../assets/imagenes/productos/auriculares.jpg";
+import monitor from "../assets/imagenes/productos/monitor.jpg";
+import gpu from "../assets/imagenes/productos/gpu.jpg";
+import cpu from "../assets/imagenes/productos/cpu.jpg";
+import ram from "../assets/imagenes/productos/ram.jpg";
+import ssd from "../assets/imagenes/productos/ssd.jpg";
+import silla from "../assets/imagenes/productos/silla.jpg";
+import gabinete from "../assets/imagenes/productos/gabinete.jpg";
+import mousepad from "../assets/imagenes/productos/mousepad.jpg";
+import microfono from "../assets/imagenes/productos/microfono.jpg";
+
+
+/*Quien haga la parte de detalle de producto, puede cambiar tanto descripcion como caracteristicas a su gusto*/
+
+export const productos = [
+  {
+    id: 1,
+    nombre: "Teclado NKB-68",
+    categoria: "Periféricos",
+    precio: 80000,
+    imagen: teclado,
+    descripcion: "Switches blue MX, retroiluminación RGB.",
+    caracteristicas: ["Switches blue MX", "Retroiluminación RGB", "Conexión por USB"],
+    stock: 12,
+  },
+  {
+    id: 2,
+    nombre: "Mouse Deathadder Essential Black Razer",
+    categoria: "Periféricos",
+    precio: 30000,
+    imagen: mouse,
+    descripcion: "Mouse Ultraligero.",
+    caracteristicas: ["Hasta 6000 DPI", "Iluminación RGB"],
+    stock: 25,
+  },
+  {
+    id: 3,
+    nombre: "Auriculares Razer Blackshark V2",
+    categoria: "Audio",
+    precio: 90000,
+    imagen: auriculares,
+    descripcion: "Sonido envolvente 7.1.",
+    caracteristicas: ["Sonido envolvente 7.1", "Conexión USB", "Compatibilidad con consolas"],
+    stock: 8,
+  },
+  {
+    id: 4,
+    nombre: "Monitor Gamer 24 pulgadas LG 180Hz",
+    categoria: "Monitores",
+    precio: 210000,
+    imagen: monitor,
+    descripcion: "180Hz Freesync modelo 24GS60F",
+    caracteristicas: ["Resolución FHD 1920x1080", "180Hz", "FreeSync"],
+    stock: 5,
+  },
+  {
+    id: 5,
+    nombre: "Placa de Video RTX 4060",
+    categoria: "Componentes",
+    precio: 700000,
+    imagen: gpu,
+    descripcion: "Placa De Video Gigabyte Nvidia Geforce RTX 4060",
+    caracteristicas: ["DLSS 4", "Triple ventilador"],
+    stock: 0,
+  },
+  {
+    id: 6,
+    nombre: "Procesador Ryzen 5 5600",
+    categoria: "Componentes",
+    precio: 270000,
+    imagen: cpu,
+    descripcion: "6 núcleos y 12 hilos, hasta 4.4 GHz.",
+    caracteristicas: ["6 núcleos / 12 hilos", "Hasta 4.4 GHz"],
+    stock: 14,
+  },
+  {
+    id: 7,
+    nombre: "Memoria RAM 16GB DDR4",
+    categoria: "Componentes",
+    precio: 390000,
+    imagen: ram,
+    descripcion: "Ram marca Fury de 3200Mhz DDR4",
+    caracteristicas: ["3200MHz"],
+    stock: 30,
+  },
+  {
+    id: 8,
+    nombre: "SSD NVMe 1TB",
+    categoria: "Almacenamiento",
+    precio: 260000,
+    imagen: ssd,
+    descripcion: "Lectura de hasta 6000 MB/s para cargar juegos al instante.",
+    caracteristicas: ["1TB de capacidad", "Lectura 6000 MB/s"],
+    stock: 18,
+  },
+  {
+    id: 9,
+    nombre: "Silla Gamer Ergonómica",
+    categoria: "Mobiliario",
+    precio: 230000,
+    imagen: silla,
+    descripcion: "Respaldo reclinable y apoyo lumbar.",
+    caracteristicas: ["Reclinable hasta 180°", "Almohadones lumbar y cervical"],
+    stock: 0,
+  },
+  {
+    id: 10,
+    nombre: "Gabinete Gamer Sentey T20",
+    categoria: "Componentes",
+    precio: 140000,
+    imagen: gabinete,
+    descripcion: "Vidrio templado y excelente flujo de aire.",
+    caracteristicas: ["Panel lateral de vidrio templado", "Filtros antipolvo"],
+    stock: 7,
+  },
+  {
+    id: 11,
+    nombre: "Mousepad XL",
+    categoria: "Periféricos",
+    precio: 18000,
+    imagen: mousepad,
+    descripcion: "90x40cm y base antideslizante",
+    caracteristicas: ["90x40cm", "Base antideslizante"],
+    stock: 40,
+  },
+  {
+    id: 12,
+    nombre: "Micrófono JBL USB Quantum Streaming",
+    categoria: "Audio",
+    precio: 210000,
+    imagen: microfono,
+    descripcion: "Ideal para streams y Discord.",
+    caracteristicas: ["Conexión USB plug & play"],
+    stock: 9,
+  },
+];
