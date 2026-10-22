@@ -3,7 +3,8 @@ import { Card, Badge, Button } from "react-bootstrap";
 import "./ProductoCard.css";
 
 function ProductoCard({ producto, onAgregar }) {
-  const { id, nombre, categoria, precio, imagen, descripcion, stock } = producto;
+  const { id, nombre, categoria, precio, imagen, descripcion, stock } =
+    producto;
   const sinStock = stock === 0;
   const pocoStock = stock > 0 && stock <= 5;
 
@@ -33,18 +34,31 @@ function ProductoCard({ producto, onAgregar }) {
 
       <Card.Body className="d-flex flex-column">
         <small className="producto-card__categoria">{categoria}</small>
-        <Card.Title as="h3" className="fs-5">{nombre}</Card.Title>
-        <Card.Text className="text-muted small flex-grow-1">{descripcion}</Card.Text>
+        <Card.Title as="h3" className="fs-5">
+          {nombre}
+        </Card.Title>
+        <Card.Text className="text-muted small flex-grow-1">
+          {descripcion}
+        </Card.Text>
 
         <Card.Text className={`small mb-1 fw-semibold ${claseStock}`}>
           {sinStock ? "No disponible" : `Stock disponible: ${stock}`}
         </Card.Text>
+
         <Card.Text className="fs-4 fw-bold mb-3">
           ${precio.toLocaleString("es-AR")}
         </Card.Text>
+        <Card.Text className="small text-muted">
+          3 cuotas fijas de ${(precio / 3).toLocaleString("es-AR")} si abonas con Mercado Pago
+        </Card.Text>
 
         <div className="d-flex gap-2">
-          <Button as={Link} to={`/producto/${id}`} variant="outline-primary" className="flex-fill btn-nexus-outline">
+          <Button
+            as={Link}
+            to={`/producto/${id}`}
+            variant="outline-primary"
+            className="flex-fill btn-nexus-outline"
+          >
             Ver detalle
           </Button>
           <Button
