@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import BannerSlider from "../components/BannerSlider";
 
 function Inicio() {
@@ -16,7 +18,9 @@ function Inicio() {
           experiencia gaming más lejos.
         </p>
 
-        <button className="boton-principal">Explorar productos</button>
+        <Button as={Link} to="/productos" size="lg" className="btn-nexus">
+          Explorar productos
+        </Button>
       </section>
     </main>
   );

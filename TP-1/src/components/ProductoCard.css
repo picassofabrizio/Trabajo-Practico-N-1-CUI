@@ -1,0 +1,16 @@
+.producto-card__img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 0.5rem;
+}
+.producto-card__img--agotado {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+.producto-card__categoria {
+  color: #8b5cf6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
