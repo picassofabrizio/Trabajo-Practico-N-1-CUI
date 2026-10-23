@@ -7,6 +7,7 @@ import Nosotros from "./paginas/Nosotros";
 import Carrito from "./paginas/Carrito";
 import Footer from "./components/Footer";
 import RestablecerScroll from "./components/RestablecerScroll";
+import Login from "./paginas/Login";
 import "./App.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/carrito" element={<Carrito />} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
       <Footer />
     </div>

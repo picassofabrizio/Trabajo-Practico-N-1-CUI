@@ -22,6 +22,10 @@ function NavBar() {
       <NavLink to="/carrito" className={({ isActive }) => isActive ? "activo" : ""}>
         🛒
       </NavLink>
+
+      <NavLink to="/login" className={({ isActive }) => isActive ? "activo" : ""}>
+        Login
+      </NavLink>
     </nav>
   );
 }
