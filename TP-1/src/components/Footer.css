@@ -1,0 +1,101 @@
+
+/* ===== FOOTER NEXUS GAMING ===== */
+
+.footer-nexus {
+  margin-top: 4rem;
+  padding: 2.5rem clamp(1rem, 5vw, 4rem) 1rem;
+  background: linear-gradient(
+    180deg,
+    #12101d,
+    #090910
+  );
+  border-top: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.footer-nexus__contenido {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nexus__marca h2 {
+  margin-bottom: 0.75rem;
+  color: #f5f3ff;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.footer-nexus__marca h2 span {
+  color: #a78bfa;
+}
+
+.footer-nexus__marca p {
+  max-width: 22rem;
+  color: #b8b4ca;
+  line-height: 1.7;
+}
+
+.footer-nexus__enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.footer-nexus__enlaces h3 {
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.footer-nexus__enlaces a {
+  color: #b8b4ca;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-nexus__enlaces a:hover {
+  color: #c4b5fd;
+}
+
+.footer-nexus__inferior {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(167, 139, 250, 0.15);
+  text-align: center;
+}
+
+.footer-nexus__inferior p {
+  margin: 0;
+  color: #89859e;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 576px) {
+  .footer-nexus__contenido {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+
+  .footer-nexus__marca {
+    grid-column: 1 / -1;
+  }
+
+  .footer-nexus__marca h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== ACCESIBILIDAD ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-nexus__enlaces a {
+    transition: none;
+  }
+}

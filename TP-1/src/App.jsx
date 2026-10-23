@@ -5,6 +5,8 @@ import Productos from "./paginas/Productos";
 import Contacto from "./paginas/Contacto";
 import Nosotros from "./paginas/Nosotros";
 import Carrito from "./paginas/Carrito";
+import Footer from "./components/Footer";
+import RestablecerScroll from "./components/RestablecerScroll";
 import "./App.css";
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
         </h1>
         <NavBar />
       </header>
-
+      <RestablecerScroll/>
+      
       <Routes>
         <Route path="/" element={<Inicio onAgregar={agregarAlCarrito} />} />
         <Route
@@ -32,6 +35,7 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/carrito" element={<Carrito />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
