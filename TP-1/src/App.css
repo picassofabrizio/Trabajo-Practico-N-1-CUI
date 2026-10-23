@@ -1,5 +1,7 @@
 
-/* ===== ESTILOS GENERALES ===== */
+/* ==================================================
+   1. ESTILOS GENERALES
+================================================== */
 
 :root {
   color-scheme: dark;
@@ -33,7 +35,10 @@ body {
   background: transparent;
 }
 
-/* ===== ENCABEZADO Y LOGO ===== */
+
+/* ==================================================
+   2. ENCABEZADO Y LOGO
+================================================== */
 
 .encabezado {
   display: flex;
@@ -52,34 +57,6 @@ body {
   margin: 0;
 }
 
-.encabezado .nav {
-  flex: 1;
-  justify-content: flex-end;
-  padding: 0;
-  border-bottom: none;
-  background: transparent;
-}
-
-.encabezado nav a {
-  text-decoration: none;
-  color: #cbd5e1;
-  font-size: 1rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 0.5rem;
-  transition: 0.2s;
-}
-
-.encabezado nav a:hover {
-  color: #ffffff;
-  background-color: #252a3a;
-}
-
-.encabezado nav a.activo {
-  color: #c4b5fd;
-  background-color: #29223f;
-  font-weight: bold;
-}
-
 .logo {
   display: flex;
   flex-direction: column;
@@ -95,38 +72,17 @@ body {
 }
 
 .logo-gaming {
+  margin-top: 0.2rem;
+  margin-left: 3.5rem;
   color: #a78bfa;
   font-size: 1.65rem;
   font-weight: 800;
-  margin-left: 3.5rem;
-  margin-top: 0.2rem;
 }
 
-/* ===== BOTONES NEXUS ===== */
 
-.btn-nexus {
-  --bs-btn-bg: #8b5cf6;
-  --bs-btn-border-color: #8b5cf6;
-  --bs-btn-hover-bg: #7c3aed;
-  --bs-btn-hover-border-color: #7c3aed;
-  --bs-btn-active-bg: #6d28d9;
-  --bs-btn-active-border-color: #6d28d9;
-  --bs-btn-disabled-bg: #4b455e;
-  --bs-btn-disabled-border-color: #4b455e;
-  --bs-btn-color: #ffffff;
-}
-
-.btn-nexus-outline {
-  --bs-btn-color: #c4b5fd;
-  --bs-btn-border-color: #8b5cf6;
-  --bs-btn-hover-color: #ffffff;
-  --bs-btn-hover-bg: #8b5cf6;
-  --bs-btn-hover-border-color: #8b5cf6;
-  --bs-btn-active-bg: #7c3aed;
-  --bs-btn-active-border-color: #7c3aed;
-}
-
-/* ===== NAVBAR ===== */
+/* ==================================================
+   3. NAVEGACIÓN
+================================================== */
 
 .nav {
   display: flex;
@@ -166,7 +122,65 @@ body {
   box-shadow: 0 0 1rem rgba(124, 58, 237, 0.12);
 }
 
-/* ===== INICIO ===== */
+/* Ajustes de navegación dentro del encabezado */
+
+.encabezado .nav {
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0;
+  border-bottom: none;
+  background: transparent;
+}
+
+.encabezado nav a {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.encabezado nav a:hover {
+  color: #ffffff;
+  background-color: #252a3a;
+}
+
+.encabezado nav a.activo {
+  color: #c4b5fd;
+  background-color: #29223f;
+  font-weight: bold;
+}
+
+
+/* ==================================================
+   4. BOTONES NEXUS
+================================================== */
+
+.btn-nexus {
+  --bs-btn-bg: #8b5cf6;
+  --bs-btn-border-color: #8b5cf6;
+  --bs-btn-hover-bg: #7c3aed;
+  --bs-btn-hover-border-color: #7c3aed;
+  --bs-btn-active-bg: #6d28d9;
+  --bs-btn-active-border-color: #6d28d9;
+  --bs-btn-disabled-bg: #4b455e;
+  --bs-btn-disabled-border-color: #4b455e;
+  --bs-btn-color: #ffffff;
+}
+
+.btn-nexus-outline {
+  --bs-btn-color: #c4b5fd;
+  --bs-btn-border-color: #8b5cf6;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #8b5cf6;
+  --bs-btn-hover-border-color: #8b5cf6;
+  --bs-btn-active-bg: #7c3aed;
+  --bs-btn-active-border-color: #7c3aed;
+}
+
+
+/* ==================================================
+   5. PÁGINA DE INICIO
+================================================== */
 
 .inicio {
   position: relative;
@@ -177,7 +191,8 @@ body {
   background: transparent;
 }
 
-/* ===== PRESENTACIÓN ===== */
+
+/* Presentación principal */
 
 .presentacion {
   width: min(100%, 850px);
@@ -229,7 +244,9 @@ body {
   box-shadow: 0 0.5rem 1.8rem rgba(124, 58, 237, 0.3);
   color: #ffffff;
   font-weight: 800;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .presentacion .btn-nexus:hover {
@@ -242,9 +259,94 @@ body {
   outline-offset: 4px;
 }
 
-/* ===== RESPONSIVE ===== */
+
+/* ==================================================
+   6. PRODUCTOS DESTACADOS
+================================================== */
+
+.destacados {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding: 1rem 0;
+}
+
+.destacados h2 {
+  margin-bottom: 0.6rem;
+  color: #f5f3ff;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.destacados h2::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 0.2rem;
+  margin-top: 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #a78bfa, #7c3aed);
+}
+
+.destacados > p {
+  margin-bottom: 1.5rem;
+  color: #b8b4ca;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.inicio__productos {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+}
+
+.inicio__productos > div {
+  display: flex;
+}
+
+.inicio__productos .producto-card {
+  width: 100%;
+  border-radius: 0.85rem;
+}
+
+.inicio__productos .producto-card__img {
+  aspect-ratio: 5 / 3;
+  padding: 0.6rem;
+}
+
+.inicio__productos .producto-card .card-body {
+  padding: 0.85rem;
+}
+
+.inicio__productos .producto-card .card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem !important;
+}
+
+.inicio__productos .producto-card .card-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.inicio__productos .producto-card .fs-4 {
+  font-size: 1.3rem !important;
+}
+
+.inicio__productos .producto-card .btn {
+  min-height: 2.5rem;
+  padding: 0.55rem 0.4rem;
+  font-size: 0.78rem;
+}
+
+
+/* ==================================================
+RESPONSIVE
+================================================== */
 
 @media (max-width: 576px) {
+
+  /* Encabezado */
+
   .encabezado {
     flex-wrap: wrap;
     justify-content: center;
@@ -260,6 +362,8 @@ body {
     justify-content: center;
   }
 
+  /* Navegación */
+
   .nav {
     gap: 0.25rem;
     padding: 0.5rem 0.25rem;
@@ -269,6 +373,8 @@ body {
     padding: 0.6rem 0.65rem;
     font-size: 0.85rem;
   }
+
+  /* Inicio y presentación */
 
   .inicio {
     padding: 0.5rem 0.75rem;
@@ -281,9 +387,37 @@ body {
   .presentacion .btn-nexus {
     width: 100%;
   }
+
+  /* Títulos destacados */
+
+  .destacados {
+    margin-top: 2rem;
+  }
+
+  .destacados h2 {
+    font-size: 1.5rem;
+  }
+
+  .destacados > p {
+    font-size: 0.9rem;
+  }
+
+  /* Tarjetas destacadas */
+
+  .inicio__productos .producto-card .card-body {
+    padding: 0.65rem;
+  }
+
+  .inicio__productos .producto-card .btn {
+    padding: 0.55rem 0.3rem;
+    font-size: 0.7rem;
+  }
 }
 
-/* ===== ACCESIBILIDAD ===== */
+
+/* ==================================================
+   8. ACCESIBILIDAD
+================================================== */
 
 @media (prefers-reduced-motion: reduce) {
   .nav a,

@@ -29,11 +29,17 @@ function BannerSlider() {
     const intervalo = setInterval(() => {
         // Actualiza el índice para avanzar a la siguiente imagen.
         // El % hace que, al llegar a la última, vuelva a la primera.*/
+        //actual: es un nombre que elegimos para recibir el valor más 
+        // reciente del estado cuando React procesa la actualización.
       setIndice((actual) => (actual + 1) % banners.length);
     }, 3000);
-
+    //Cuando cambia indice, React vuelve a ejecutar el efecto.
+    //  Antes de crear el temporizador nuevo, 
+    // ejecuta la limpieza del anterior.
     return () => clearInterval(intervalo);
-  }, []);
+    //le estamos diciendo a React que vuelva a ejecutar
+    //el efecto cuando cambie indice.
+  }, [indice]);
 
   function anterior() {
     // Resta 1 para retroceder una imagen.

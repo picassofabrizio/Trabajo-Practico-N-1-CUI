@@ -23,7 +23,7 @@ function App() {
       </header>
 
       <Routes>
-        <Route path="/" element={<Inicio />} />
+        <Route path="/" element={<Inicio onAgregar={agregarAlCarrito} />} />
         <Route
           path="/productos"
           element={<Productos onAgregar={agregarAlCarrito} />}
