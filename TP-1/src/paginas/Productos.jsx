@@ -8,7 +8,7 @@ function Productos({ onAgregar }) {
   return (
     <Container as="main" className="py-4">
       <h2>Catálogo de productos</h2>
-      <p className="text-muted mb-4">Equipá tu setup con lo mejor del gaming.</p>
+      <p className="subtitulo-productos mb-4">Equipá tu setup con lo mejor del gaming.</p>
 
       <Row xs={1} sm={2} lg={4} className="g-4">
         {productosVisibles.map((producto) => (

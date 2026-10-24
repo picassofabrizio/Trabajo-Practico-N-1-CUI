@@ -29,13 +29,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio onAgregar={agregarAlCarrito} />} />
         <Route
-          path="./productos"
+          path="/productos"
           element={<Productos onAgregar={agregarAlCarrito} />}
         />
-        <Route path="./contacto" element={<Contacto />} />
-        <Route path="./nosotros" element={<Nosotros />} />
-        <Route path="./carrito" element={<Carrito />} />
-        <Route path="./login" element={<Login/>} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/carrito" element={<Carrito />} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
       <Footer />
     </div>

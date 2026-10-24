@@ -218,6 +218,7 @@ body {
   font-size: clamp(2.2rem, 6vw, 4.5rem);
   font-weight: 900;
   line-height: 1.1;
+  padding-bottom: 0.15em;
   letter-spacing: -0.04em;
   text-wrap: balance;
   background: linear-gradient(100deg, #ffffff, #c4b5fd, #a78bfa);
@@ -343,7 +344,15 @@ body {
 }
 
 /* ==================================================
-RESPONSIVE
+   7. PÁGINA DE PRODUCTOS
+================================================== */
+
+.subtitulo-productos {
+  color: #b8b8d1;
+}
+
+/* ==================================================
+   8. RESPONSIVE
 ================================================== */
 
 @media (max-width: 576px) {
@@ -427,7 +436,7 @@ RESPONSIVE
 }
 
 /* ==================================================
-   8. ACCESIBILIDAD
+   9. ACCESIBILIDAD
 ================================================== */
 
 @media (prefers-reduced-motion: reduce) {
