@@ -23,6 +23,8 @@ export const productos = [
     imagen: teclado,
     descripcion: "Switches blue MX, retroiluminación RGB.",
     caracteristicas: ["Switches blue MX", "Retroiluminación RGB", "Conexión por USB"],
+    marca: "NKB",
+    modelo: "NKB-68",
     stock: 12,
   },
   {
@@ -33,6 +35,8 @@ export const productos = [
     imagen: mouse,
     descripcion: "Mouse Ultraligero.",
     caracteristicas: ["Hasta 6000 DPI", "Iluminación RGB"],
+    marca: "Razer",
+    modelo: "Deathadder Essential Black",
     stock: 25,
   },
   {
@@ -43,6 +47,8 @@ export const productos = [
     imagen: auriculares,
     descripcion: "Sonido envolvente 7.1.",
     caracteristicas: ["Sonido envolvente 7.1", "Conexión USB", "Compatibilidad con consolas"],
+    marca: "Razer",
+    modelo: "Blackshark V2",
     stock: 8,
   },
   {
@@ -53,6 +59,8 @@ export const productos = [
     imagen: monitor,
     descripcion: "180Hz Freesync modelo 24GS60F",
     caracteristicas: ["Resolución FHD 1920x1080", "180Hz", "FreeSync"],
+    marca: "LG",
+    modelo: "24GS60F",
     stock: 5,
   },
   {
@@ -63,6 +71,8 @@ export const productos = [
     imagen: gpu,
     descripcion: "Placa De Video Gigabyte Nvidia Geforce RTX 4060",
     caracteristicas: ["DLSS 4", "Triple ventilador"],
+    marca: "Nvidia",
+    modelo: "RTX 4060",
     stock: 0,
   },
   {
@@ -73,6 +83,8 @@ export const productos = [
     imagen: cpu,
     descripcion: "6 núcleos y 12 hilos, hasta 4.4 GHz.",
     caracteristicas: ["6 núcleos / 12 hilos", "Hasta 4.4 GHz"],
+    marca: "AMD",
+    modelo: "Ryzen 5 5600",
     stock: 14,
   },
   {
@@ -83,6 +95,8 @@ export const productos = [
     imagen: ram,
     descripcion: "Ram marca Fury de 3200Mhz DDR4",
     caracteristicas: ["3200MHz"],
+    marca: "Fury",
+    modelo: "Fury 16GB DDR4",
     stock: 30,
   },
   {
@@ -93,6 +107,8 @@ export const productos = [
     imagen: ssd,
     descripcion: "Lectura de hasta 6000 MB/s para cargar juegos al instante.",
     caracteristicas: ["1TB de capacidad", "Lectura 6000 MB/s"],
+    marca: "Kingston",
+    modelo: "980 Pro",
     stock: 18,
   },
   {
@@ -103,6 +119,8 @@ export const productos = [
     imagen: silla,
     descripcion: "Respaldo reclinable y apoyo lumbar.",
     caracteristicas: ["Reclinable hasta 180°", "Almohadones lumbar y cervical"],
+    marca: "DXRacer",
+    modelo: "DXRacer Formula Series",
     stock: 0,
   },
   {
@@ -113,6 +131,8 @@ export const productos = [
     imagen: gabinete,
     descripcion: "Vidrio templado y excelente flujo de aire.",
     caracteristicas: ["Panel lateral de vidrio templado", "Filtros antipolvo"],
+    marca: "Sentey",
+    modelo: "T20",
     stock: 7,
   },
   {
@@ -123,6 +143,8 @@ export const productos = [
     imagen: mousepad,
     descripcion: "90x40cm y base antideslizante",
     caracteristicas: ["90x40cm", "Base antideslizante"],
+    marca: "HyperX",
+    modelo: "Fury S Pro",
     stock: 40,
   },
   {
@@ -133,6 +155,8 @@ export const productos = [
     imagen: microfono,
     descripcion: "Ideal para streams y Discord.",
     caracteristicas: ["Conexión USB plug & play"],
+    marca: "JBL",
+    modelo: "Quantum Streaming",
     stock: 9,
   },
 ];

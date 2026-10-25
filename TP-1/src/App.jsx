@@ -8,6 +8,7 @@ import Carrito from "./paginas/Carrito";
 import Footer from "./components/Footer";
 import RestablecerScroll from "./components/RestablecerScroll";
 import Login from "./paginas/Login";
+import DetallesDelProducto from "./components/DetallesDelProducto";
 import "./App.css";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/carrito" element={<Carrito />} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/producto/:id" element={<DetallesDelProducto />} />
       </Routes>
       <Footer />
     </div>
