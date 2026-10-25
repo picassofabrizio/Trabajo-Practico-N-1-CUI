@@ -176,6 +176,23 @@ body {
   --bs-btn-active-border-color: #7c3aed;
 }
 
+.boton-outline {
+  display: inline-block;
+  background: transparent;
+  color: #c4b5fd;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.boton-outline:hover {
+  background: rgba(139, 92, 246, 0.2);
+}
+
 /* ==================================================
    5. PÁGINA DE INICIO
 ================================================== */
@@ -349,6 +366,18 @@ body {
 
 .subtitulo-productos {
   color: #b8b8d1;
+}
+
+.contador-productos {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.15rem;
 }
 
 /* ==================================================
