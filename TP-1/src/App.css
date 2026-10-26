@@ -478,3 +478,21 @@ body {
     transform: none;
   }
 }
+/* ==================================================
+   9. ESTILO DEL LOGIN
+================================================== */
+/* Estilos de los inputs morados */
+.input-purple {
+  border: 2px solid #d8b4fe; /* Borde morado claro */
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.2s ease-in-out;
+  background-color:#a78bfa
+}
+
+/* Efecto focus al hacer clic en el input */
+.input-purple:focus {
+  border-color: #7e22ce; /* Morado más oscuro */
+  box-shadow: 0 0 0 0.25rem rgba(126, 34, 206, 0.25); /* Glow morado */
+  outline: none;
+}
