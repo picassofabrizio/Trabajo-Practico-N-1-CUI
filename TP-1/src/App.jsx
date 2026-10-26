@@ -6,6 +6,7 @@ import Contacto from "./paginas/Contacto";
 import Nosotros from "./paginas/Nosotros";
 import Carrito from "./paginas/Carrito";
 import Footer from "./components/Footer";
+import Registro from "./paginas/Registro";
 import RestablecerScroll from "./components/RestablecerScroll";
 import Login from "./paginas/Login";
 import "./App.css";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/carrito" element={<Carrito />} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/registro" element={ <Registro/> } />
       </Routes>
       <Footer />
     </div>
