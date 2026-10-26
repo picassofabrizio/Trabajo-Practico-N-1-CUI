@@ -13,6 +13,7 @@ function DetallesDelProducto({ onAgregar }) {
     const idNumerico = +id; // Convertir a número
     const producto = productos.find((p) => p.id === idNumerico);// Buscar el producto con el id correspondiente
     const reseñasProducto = reseñas.filter((r) => r.productoId === idNumerico)
+    const sinStock = producto.stock === 0;
 
     return (
         <div className="container py-4">
@@ -30,12 +31,12 @@ function DetallesDelProducto({ onAgregar }) {
                         <p>Categoría: {producto.categoria}</p>
                         <p>Stock: {producto.stock}</p>
                         <div className="d-flex gap-2 mt-3">
-                            <Button variant="outline-primary" className="flex-fill btn-nexus-outline" onClick={() => onAgregar(producto)}>
+                            <Button disabled={sinStock} variant="outline-primary" className="flex-fill btn-nexus-outline" onClick={() => onAgregar(producto)}>
                                 Agregar al Carrito
                             </Button>
                             <br />
                             <br />
-                            <Button as={Link} to="/datoscompra" variant="primary" className="flex-fill btn-nexus" >
+                            <Button disabled={sinStock} as={Link} to="/datoscompra" variant="primary" className="flex-fill btn-nexus" >
                                 Comprar Ahora
                             </Button>
                         </div>
