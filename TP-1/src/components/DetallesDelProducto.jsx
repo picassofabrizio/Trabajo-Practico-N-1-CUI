@@ -4,11 +4,10 @@ import ProductoCard from "./ProductoCard";
 import { Button, Row, Col } from "react-bootstrap";
 import { productos } from "../data/productos";
 import { reseñas } from "../data/reseñas";
-import onAgregar from "../App";
 import "../App.css";
 import "./ProductoCard.css";
 
-function DetallesDelProducto({ }) {
+function DetallesDelProducto({ onAgregar }) {
     // useParams extrae los parámetros de la URL. Si la URL es /producto/2, id valdrá "2"
     const { id } = useParams();
     const idNumerico = +id; // Convertir a número
