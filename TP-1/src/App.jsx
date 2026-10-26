@@ -68,12 +68,11 @@ function App() {
             carrito={carrito}
             onCambiarCantidad={cambiarCantidad}
             onEliminar={eliminarDelCarrito}
-            onVaciar={vaciarCarrito}
           />} 
         />
         <Route path="/login" element={<Login/>} />
         <Route path="/datoscompra" element={ <DatosCompra/> } />
-        <Route path="/producto/:id" element={<DetallesDelProducto onAgregar={agregarAlCarrito} />} />
+        <Route path="/datoscompra" element={ <DatosCompra carrito={carrito} onVaciar={vaciarCarrito} /> } />
 
       </Routes>
       <Footer />
