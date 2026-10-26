@@ -43,6 +43,13 @@ function App() {
   };
   const vaciarCarrito = () => setCarrito([]);
 
+
+  let cantidadEnCarrito = 0;
+  carrito.forEach((producto) => {
+    cantidadEnCarrito = cantidadEnCarrito + producto.cantidad;
+  });
+
+
   return (
     <div>
       <header className="encabezado">
@@ -50,7 +57,7 @@ function App() {
           <span className="logo-nexus">NEXUS</span>
           <span className="logo-gaming">Gaming</span>
         </h1>
-        <NavBar />
+        <NavBar cantidad={cantidadEnCarrito} />
       </header>
       <RestablecerScroll/>
       
@@ -71,7 +78,7 @@ function App() {
           />} 
         />
         <Route path="/login" element={<Login/>} />
-        <Route path="/datoscompra" element={ <DatosCompra/> } />
+        <Route path="/producto/:id" element={<DetallesDelProducto onAgregar={agregarAlCarrito} />} />
         <Route path="/datoscompra" element={ <DatosCompra carrito={carrito} onVaciar={vaciarCarrito} /> } />
 
       </Routes>

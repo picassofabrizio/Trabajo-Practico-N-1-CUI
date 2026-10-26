@@ -20,7 +20,7 @@ function CarritoItem({ producto, onCambiarCantidad, onEliminar }) {
                     </Col>
 
                     {/* Botones para cambiar la cantidad */}
-                    <Col xs={6} md={3} className="d-flex gap-2">
+                     <Col xs={6} md={3} className="d-flex align-items-center gap-2">
                         <Button
                             variant="outline-primary"
                             className="btn-nexus-outline"
