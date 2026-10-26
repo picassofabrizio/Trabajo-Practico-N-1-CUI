@@ -176,6 +176,23 @@ body {
   --bs-btn-active-border-color: #7c3aed;
 }
 
+.boton-outline {
+  display: inline-block;
+  background: transparent;
+  color: #c4b5fd;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.boton-outline:hover {
+  background: rgba(139, 92, 246, 0.2);
+}
+
 /* ==================================================
    5. PÁGINA DE INICIO
 ================================================== */
@@ -218,6 +235,7 @@ body {
   font-size: clamp(2.2rem, 6vw, 4.5rem);
   font-weight: 900;
   line-height: 1.1;
+  padding-bottom: 0.15em;
   letter-spacing: -0.04em;
   text-wrap: balance;
   background: linear-gradient(100deg, #ffffff, #c4b5fd, #a78bfa);
@@ -343,7 +361,27 @@ body {
 }
 
 /* ==================================================
-RESPONSIVE
+   7. PÁGINA DE PRODUCTOS
+================================================== */
+
+.subtitulo-productos {
+  color: #b8b8d1;
+}
+
+.contador-productos {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.15rem;
+}
+
+/* ==================================================
+   8. RESPONSIVE
 ================================================== */
 
 @media (max-width: 576px) {
@@ -427,7 +465,7 @@ RESPONSIVE
 }
 
 /* ==================================================
-   8. ACCESIBILIDAD
+   9. ACCESIBILIDAD
 ================================================== */
 
 @media (prefers-reduced-motion: reduce) {
@@ -439,4 +477,22 @@ RESPONSIVE
   .presentacion .btn-nexus:hover {
     transform: none;
   }
+}
+/* ==================================================
+   9. ESTILO DEL LOGIN
+================================================== */
+/* Estilos de los inputs morados */
+.input-purple {
+  border: 2px solid #d8b4fe; /* Borde morado claro */
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.2s ease-in-out;
+  background-color:#a78bfa
+}
+
+/* Efecto focus al hacer clic en el input */
+.input-purple:focus {
+  border-color: #7e22ce; /* Morado más oscuro */
+  box-shadow: 0 0 0 0.25rem rgba(126, 34, 206, 0.25); /* Glow morado */
+  outline: none;
 }
