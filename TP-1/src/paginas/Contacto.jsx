@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Card } from "react-bootstrap"
+import {Button, Card } from "react-bootstrap"
 import { Form } from "react-router-dom"
 
 const validate = (data) => {
@@ -96,7 +96,7 @@ function Contacto(){
                     </div>
 
                     <div className="col-12">
-                        <button type="submit" className="btn btn-primary">Enviar</button>
+                        <Button type="submit" variant="outline-primary" className="flex-fill btn-nexus-outline">Enviar</Button>
                     </div>
 
                 </form>

@@ -70,7 +70,6 @@ function Login() {
         <br />
         <Button variant="outline-primary" className="flex-fill btn-nexus-outline" type="submit">Iniciar Sesión</Button>
       </form>
-      <button type="button" class="btn btn-link"> Link </button>
     </div>
   );
 }
