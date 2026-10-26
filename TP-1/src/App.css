@@ -574,3 +574,13 @@ body {
     padding: 3rem 5%;
   }
 }
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-contenido {
+  flex: 1;
+}
