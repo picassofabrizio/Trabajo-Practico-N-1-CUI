@@ -10,12 +10,38 @@ import DatosCompra from "./paginas/DatosCompra";
 import RestablecerScroll from "./components/RestablecerScroll";
 import Login from "./paginas/Login";
 import DetallesDelProducto from "./components/DetallesDelProducto";
+import { useState} from "react";
 import "./App.css";
 
 function App() {
-  const agregarAlCarrito = (producto) => {
-    console.log("Agregar al carrito:", producto.nombre);
+  const [carrito, setCarrito] = useState([]);
+
+  // Suma o resta 1 a la cantidad de un producto
+  const cambiarCantidad = (id, cambio) => {
+    const nuevoCarrito = carrito.map((item) => {
+      if (item.id !== id) return item;
+      const nueva = item.cantidad + cambio;
+      if (nueva < 1 || nueva > item.stock) return item;
+      return { ...item, cantidad: nueva };
+    });
+    setCarrito(nuevoCarrito);
   };
+
+  const agregarAlCarrito = (producto) => {
+      const existe = carrito.find((item) => item.id === producto.id);
+      if(existe) {
+        cambiarCantidad(producto.id, 1);
+      } else {
+        setCarrito([...carrito, { ...producto, cantidad:1}]);
+      }
+  };
+
+   // Saca un producto del carrito
+  const eliminarDelCarrito = (id) => {
+    const nuevoCarrito = carrito.filter((item) => item.id !== id);
+    setCarrito(nuevoCarrito);
+  };
+  const vaciarCarrito = () => setCarrito([]);
 
   return (
     <div>
@@ -36,10 +62,18 @@ function App() {
         />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/nosotros" element={<Nosotros />} />
-        <Route path="/carrito" element={<Carrito />} />
+        <Route 
+          path="/carrito" 
+          element={<Carrito 
+            carrito={carrito}
+            onCambiarCantidad={cambiarCantidad}
+            onEliminar={eliminarDelCarrito}
+          />} 
+        />
         <Route path="/login" element={<Login/>} />
         <Route path="/datoscompra" element={ <DatosCompra/> } />
-        <Route path="/producto/:id" element={<DetallesDelProducto />} />
+        <Route path="/datoscompra" element={ <DatosCompra carrito={carrito} onVaciar={vaciarCarrito} /> } />
+
       </Routes>
       <Footer />
     </div>
