@@ -6,7 +6,7 @@ import Contacto from "./paginas/Contacto";
 import Nosotros from "./paginas/Nosotros";
 import Carrito from "./paginas/Carrito";
 import Footer from "./components/Footer";
-import Registro from "./paginas/Registro";
+import DatosCompra from "./paginas/DatosCompra";
 import RestablecerScroll from "./components/RestablecerScroll";
 import Login from "./paginas/Login";
 import DetallesDelProducto from "./components/DetallesDelProducto";
@@ -72,8 +72,9 @@ function App() {
           />} 
         />
         <Route path="/login" element={<Login/>} />
-        <Route path="/registro" element={ <Registro/> } />
+        <Route path="/datoscompra" element={ <DatosCompra/> } />
         <Route path="/producto/:id" element={<DetallesDelProducto onAgregar={agregarAlCarrito} />} />
+
       </Routes>
       <Footer />
     </div>
