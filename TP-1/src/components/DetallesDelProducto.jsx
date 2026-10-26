@@ -30,14 +30,14 @@ function DetallesDelProducto({ onAgregar }) {
                         <p>Categoría: {producto.categoria}</p>
                         <p>Stock: {producto.stock}</p>
                         <div className="d-flex gap-2 mt-3">
-                            <button variant="outline-primary" className="flex-fill btn-nexus-outline" onClick={() => onAgregar(producto)}>
+                            <Button variant="outline-primary" className="flex-fill btn-nexus-outline" onClick={() => onAgregar(producto)}>
                                 Agregar al Carrito
-                            </button>
+                            </Button>
                             <br />
                             <br />
-                            <button variant="primary" className="flex-fill btn-nexus" >
+                            <Button as={Link} to="/datoscompra" variant="primary" className="flex-fill btn-nexus" >
                                 Comprar Ahora
-                            </button>
+                            </Button>
                         </div>
                     </Card.Body>
                 </Card>
