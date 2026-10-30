@@ -11,20 +11,8 @@ const banners = [
 function BannerSlider() {
     /*indice representa cuál banner estamos mostrando: 0, 1 o 2.*/
   const [indice, setIndice] = useState(0);
-    /*useEffect
-        Le dice a React: «Quiero ejecutar una tarea adicional relacionada con este componente».
-    () =>
-        Significa que vamos a definir una función: un conjunto de instrucciones que se ejecutarán cuando corresponda.
-    {
-    Abre el bloque donde vamos a escribir las instrucciones de esa función.*/ 
   useEffect(() => {
-    /*const: crea una variable cuyo valor no vamos a reasignar.
-
-    intervalo: es el nombre que elegimos para esa variable.
-    Podría llamarse temporizador; el nombre lo elegimos nosotros.
-
-    =: guarda en esa variable el resultado de lo que está a la derecha.
-
+    /*
     setInterval: inicia un temporizador que repite una tarea cada cierto tiempo.*/ 
     const intervalo = setInterval(() => {
         // Actualiza el índice para avanzar a la siguiente imagen.
@@ -34,11 +22,7 @@ function BannerSlider() {
       setIndice((actual) => (actual + 1) % banners.length);
     }, 3000);
     //Cuando cambia indice, React vuelve a ejecutar el efecto.
-    //  Antes de crear el temporizador nuevo, 
-    // ejecuta la limpieza del anterior.
     return () => clearInterval(intervalo);
-    //le estamos diciendo a React que vuelva a ejecutar
-    //el efecto cuando cambie indice.
   }, [indice]);
 
   function anterior() {
