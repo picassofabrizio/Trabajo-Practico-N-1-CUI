@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import CarritoItem from "./CarritoItem";
 
 function Carrito({ carrito, onCambiarCantidad, onEliminar }) {
-  // Calcula el total y la cantidad de productos
+  // Calcula el total del precio y la cantidad total de productos.
   let total = 0;
   let cantidadTotal = 0;
   carrito.forEach((producto) => {
