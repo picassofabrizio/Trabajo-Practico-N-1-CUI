@@ -27,7 +27,7 @@ function DetallesDelProducto({ onAgregar }) {
                         <Card.Text>
                             {producto.descripcion}
                         </Card.Text>
-                        <p style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Precio: ${producto.precio}</p>
+                        <p style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Precio: ${producto.precio.toLocaleString("es-AR")}</p>
                         <p>Categoría: {producto.categoria}</p>
                         <p>Stock: {producto.stock}</p>
                         <div className="d-flex gap-2 mt-3">
